@@ -1,0 +1,28 @@
+.intro {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2262&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    .test {
+        position: relative;
+        
+    }
+}
+
+.detail {
+    height: 200vh;
+    z-index: -1;
+    background-image: url(https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+// .hook {
+//     position: absolute;
+//     // color: white;
+//     bottom: 0px;
+//     font-size: 2em
+// }

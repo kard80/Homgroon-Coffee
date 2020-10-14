@@ -1,0 +1,27 @@
+{
+  "name": "homgroon-coffee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^9.5.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass": "^1.27.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kard80/Homgroon-Coffee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kard80/Homgroon-Coffee/issues"
+  },
+  "homepage": "https://github.com/kard80/Homgroon-Coffee#readme"
+}

@@ -1,0 +1,9 @@
+$baseColor: #FFF0F0;
+$fontColor: #A89078;
+$fontWeight: 100;
+
+@mixin flex($horizontalStyle: inherit, $verticalStyle: inherit) {
+    display: flex;
+    justify-content: $horizontalStyle;
+    align-items: $verticalStyle;
+}

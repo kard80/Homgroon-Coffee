@@ -1,0 +1,9 @@
+@import '../variables';
+
+.body {
+    width: 100vw;
+    background-color: $baseColor;
+    height: auto;
+    margin: auto;
+    color: $fontColor;
+}

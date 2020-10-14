@@ -1,0 +1,45 @@
+@import '../variables/_index.scss';
+
+.container {
+    @include flex(center);
+    height: 1rem;
+    .section {
+        @include flex(space-between);
+        width: 90%;
+        height: 8vh;
+
+        .leftSection {
+            @include flex(inherit, center);
+            font-size: 1.3em;
+        }
+
+        .selectMenu {
+            @include flex(space-between, center);
+            width: 25vw;
+            font-weight: $fontWeight;
+            list-style-type: none;
+            padding: 0px;
+            a {
+                text-decoration: none;
+                color: $fontColor;
+            }
+        }
+
+        .rightSection {
+            @include flex(space-between, center);
+            width: 6rem;
+            font-weight: $fontWeight;
+
+            .button {
+                background-color: white;
+                border: 1px solid $fontColor;
+                color: $fontColor;
+                padding: 0.6rem 1rem;
+                outline: none;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+
+        }
+    }
+}
