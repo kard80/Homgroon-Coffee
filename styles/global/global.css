@@ -1,5 +1,23 @@
-body {
-  margin: 0px;
+html {
+  background-color: #2A2B36;
+  font-size: 10px;
+  font-family: Raleway, Krub, sans-serif;
+}
+html body {
+  margin: 0.5rem;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/font/Raleway/Raleway-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Krub";
+  src: url("../../public/font/Krub/Krub-light.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=global.css.map */

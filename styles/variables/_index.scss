@@ -1,6 +1,8 @@
-$baseColor: #FFF0F0;
-$fontColor: #A89078;
-$fontWeight: 100;
+$baseColor: #2A2B36;
+$fontColor: #FFFFFF;
+$highlightFontColor: #EED369;
+$regularFontWeight: 100;
+$boldFontWeight: bold;
 
 @mixin flex($horizontalStyle: inherit, $verticalStyle: inherit) {
     display: flex;

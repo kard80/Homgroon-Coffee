@@ -1,22 +1,19 @@
 .intro {
-  height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2262&q=80);
+  height: 50vh;
+  width: 100%;
+  margin: auto;
+  background-image: url(https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: white;
 }
-.intro .test {
+.intro h1 {
   position: relative;
-}
-
-.detail {
-  height: 200vh;
-  z-index: -1;
-  background-image: url(https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
+  left: 3.6rem;
+  top: 18rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=home.module.css.map */

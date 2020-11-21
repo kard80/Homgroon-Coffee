@@ -1,45 +1,41 @@
 @import '../variables/_index.scss';
 
-.container {
+.navbar {
+    height: 3rem;
     @include flex(center);
-    height: 1rem;
+    font-size: 1.6rem;
     .section {
-        @include flex(space-between);
-        width: 90%;
-        height: 8vh;
-
+        @include flex(space-between, center);
+        width: 100%;
+        height: 100%;
         .leftSection {
-            @include flex(inherit, center);
-            font-size: 1.3em;
+            color: $fontColor;
         }
-
-        .selectMenu {
-            @include flex(space-between, center);
-            width: 25vw;
-            font-weight: $fontWeight;
-            list-style-type: none;
-            padding: 0px;
-            a {
-                text-decoration: none;
-                color: $fontColor;
-            }
-        }
-
         .rightSection {
-            @include flex(space-between, center);
-            width: 6rem;
-            font-weight: $fontWeight;
-
-            .button {
-                background-color: white;
-                border: 1px solid $fontColor;
-                color: $fontColor;
-                padding: 0.6rem 1rem;
-                outline: none;
+            .hamburger {
+                display: inline-block;
                 cursor: pointer;
-                border-radius: 10px;
+                .icon {
+                    background-color: $fontColor;
+                    width: 25px;
+                    height: 2px;
+                    transition: 0.4s;
+                    margin: 6px 0;
+                    transition: 0.4s
+                }
+                .iconSwitch1 {
+                    background-color: $baseColor;
+                    transform: rotate(-45deg) translate(1px, 6px);
+                }
+                .iconSwitch2 {
+                    display: none;
+                }
+                .iconSwitch3 {
+                    background-color: $baseColor;
+                    transform: rotate(45deg) translate(2px, -8px);
+                }
             }
-
         }
     }
+
 }
