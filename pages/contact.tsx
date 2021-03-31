@@ -44,7 +44,7 @@ export default function Contact() {
                                 language: locale,
                                 region: "th",
                                 libraries: ["visualization", "places"],
-                                key:"AIzaSyDlkP9JL19YsHZYhW9PWAOv4Zuo3s3jZ38",
+                                // key:"google map api key",
                             }}
                             defaultCenter={defaultProps.center}
                             defaultZoom={defaultProps.zoom}
