@@ -1,0 +1,159 @@
+.mobileContainer {
+  background-color: #FFFFFF;
+  color: #2A2B36;
+  width: 86%;
+  padding: 0 7% 0 7%;
+  height: auto;
+  min-height: 85vh;
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: column;
+}
+.mobileContainer .filter {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+.mobileContainer .filter input {
+  display: none;
+}
+.mobileContainer .filter select {
+  width: 100%;
+  outline: none;
+  color: #2A2B36;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.mobileContainer .menuTitle h1 {
+  margin: 0;
+}
+.mobileContainer .menuList {
+  height: auto;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  padding-bottom: 1.5rem;
+}
+.mobileContainer .menuList .menu {
+  text-align: center;
+  border: 1px solid #696969;
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mobileContainer .menuList .menu .menuImage {
+  height: auto;
+}
+.mobileContainer .menuList .menu .menuImage img {
+  width: 100%;
+  height: 9rem;
+  border-bottom: 1px solid #696969;
+  border-radius: 9px 9px 0 0;
+}
+.mobileContainer .menuList .menu .menuName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #2A2B36;
+  font-size: 18px;
+  max-width: 400px;
+}
+.modal .container {
+  background-color: white;
+  height: auto;
+  margin: 8rem auto 0 auto;
+  width: 78%;
+  padding: 1rem 4% 0 4%;
+  border-radius: 10px;
+  max-width: 36rem;
+}
+.modal .container .contentBody {
+  height: 80%;
+}
+.modal .container .contentBody .header {
+  padding-bottom: 6%;
+}
+.modal .container .contentBody .menuTable {
+  height: auto;
+  padding-bottom: 20rem;
+  font-size: 14px;
+}
+.modal .container .contentBody .menuTable .line {
+  width: 85%;
+  height: 0.1px;
+  background-color: black;
+  margin: auto;
+}
+.modal .container .contentBody .menuTable .menu {
+  display: grid;
+  grid-template-columns: 50% auto auto auto;
+  margin-bottom: 1rem;
+  width: 85%;
+  margin: 2rem auto 2rem auto;
+}
+.modal .container .contentBody .menuTable .menu .rightMenu {
+  text-align: right;
+}
+.modal .container .contentBody .closeButton {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+}
+.modal .container .contentBody .closeButton button {
+  color: #FFFFFF;
+  background-color: #2A2B36;
+  border: none;
+  border-radius: 8px;
+  width: 7rem;
+  height: 3rem;
+  cursor: pointer;
+  outline: none;
+}
+
+@media only screen and (min-width: 961px) {
+  .mobileContainer .filter input {
+    display: inline-block;
+    margin-right: 1rem;
+    border-radius: 4px;
+    border: 1px solid #696969;
+  }
+  .mobileContainer .filter select {
+    width: 12%;
+  }
+  .mobileContainer .menuList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13px, 21rem));
+    grid-gap: 0.7rem;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .mobileContainer .menuList .menu {
+    width: 19rem;
+  }
+  .mobileContainer .menuList .menu .menuImage img {
+    height: 13rem;
+  }
+  .mobileContainer .menuList .menu .menuName {
+    height: 4rem;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: none;
+  }
+  .modal .container .contentBody .menuTable {
+    margin: auto;
+    max-width: 54rem;
+  }
+}
+
+/*# sourceMappingURL=menu.module.css.map */

@@ -1,0 +1,35 @@
+@import '../../variables/_index.scss';
+
+.containerDelivery {
+    width:100%;
+    height:100%;
+    background-color: $fontColor;
+    min-height: 85vh;
+    height: auto;
+    color: $baseColor;
+
+    .body {
+        width: 85%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        font-size: 3rem;
+        color: $secondFontColor;
+        img {
+            width: 100%;
+            max-width: 50rem;
+        }
+    }
+
+}
+
+@media only screen and (min-width: $desktopWidth) {
+    .containerDelivery {
+        .body{
+            font-size: 5rem;
+            h1 {
+                padding-bottom: 4rem;
+            }
+        }
+    }
+}

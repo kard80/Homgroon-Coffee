@@ -2,16 +2,34 @@
 
 .body {
     width: 85%;
+    max-width: 400px;
     height: auto;
     margin: auto;
     background-color: $baseColor;
     color: $fontColor;
+    position:relative;
+
+    .login{
+        position: absolute;
+        width:100%;
+        height: 100vh;
+    }
     
     .dropOpacity {
-        // position: absolute;
         width: 100%;
         height: 100%;
         background-color: black;
         opacity: 50%;
+    }
+
+    .section{
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: $desktopWidth) {
+    .body {
+        max-width: initial;
+        background-color: white;
     }
 }

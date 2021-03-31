@@ -1,41 +1,97 @@
 @import '../variables/_index.scss';
 
-.navbar {
-    height: 3rem;
-    @include flex(center);
-    font-size: 1.6rem;
-    .section {
-        @include flex(space-between, center);
-        width: 100%;
-        height: 100%;
-        .leftSection {
-            color: $fontColor;
-        }
-        .rightSection {
-            .hamburger {
-                display: inline-block;
-                cursor: pointer;
-                .icon {
-                    background-color: $fontColor;
-                    width: 25px;
-                    height: 2px;
-                    transition: 0.4s;
-                    margin: 6px 0;
-                    transition: 0.4s
-                }
-                .iconSwitch1 {
-                    background-color: $baseColor;
-                    transform: rotate(-45deg) translate(1px, 6px);
-                }
-                .iconSwitch2 {
-                    display: none;
-                }
-                .iconSwitch3 {
-                    background-color: $baseColor;
-                    transform: rotate(45deg) translate(2px, -8px);
+.containerNavbar {
+    // position: sticky;
+    // top: 0px;
+    // background-color: $baseColor;
+    // z-index: 6;
+
+    .navbar {
+        margin: 2rem 0 2rem 0;
+        height: 2rem;
+        @include flex(center);
+        font-size: 1.6rem;
+        z-index: 5;
+        font-size: $regularFontSize;
+        
+        
+        .section {
+            @include flex(space-between, center);
+            width: 100%;
+            height: 100%;
+
+            .leftSection {
+                color: $highlightFontColor;
+
+            }
+
+            .middleSection {
+                display: none;
+            }
+
+            .rightSection {
+                display: none;
+                button {
+                    cursor: pointer;
                 }
             }
         }
     }
+}
 
+@media only screen and (min-width: $desktopWidth) {
+    .containerNavbar {
+        position: static;
+        .navbar {
+            position: static;
+            .section {
+                background-color: $baseColor;
+                padding-bottom: 2rem;
+                .leftSection {
+                    min-width: 20rem;
+                }
+                .middleSection {
+                    @include flex(center);
+                    width: 32%;
+
+                    ul {
+                        list-style-type: none;
+                        @include flex(space-between);
+                        padding: 0px;
+                        width: 100%;
+                        font-weight: $regularFontWeight;
+
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: $fontColor;
+                            }
+                        }
+                    }
+                }
+
+                .rightSection {
+                    display: initial;
+                    @include flex(space-between);
+                    width: 11rem;
+                    
+                    button {
+                        width: 8rem;
+                        height: 3rem;
+                        border-radius: 4px;
+                        border-style: none;
+                        color: $baseColor;
+                        outline-style: none;
+                    }
+                    a {
+                        color: $fontColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+    }
 }

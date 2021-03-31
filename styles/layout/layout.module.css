@@ -1,9 +1,16 @@
 .body {
   width: 85%;
+  max-width: 400px;
   height: auto;
   margin: auto;
   background-color: #2A2B36;
   color: #FFFFFF;
+  position: relative;
+}
+.body .login {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 .body .dropOpacity {
   width: 100%;
@@ -11,48 +18,102 @@
   background-color: black;
   opacity: 50%;
 }
+.body .section {
+  position: relative;
+}
 
-.navbar {
-  height: 3rem;
+@media only screen and (min-width: 961px) {
+  .body {
+    max-width: initial;
+    background-color: white;
+  }
+}
+.containerNavbar .navbar {
+  margin: 2rem 0 2rem 0;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: inherit;
   font-size: 1.6rem;
+  z-index: 5;
+  font-size: 14px;
 }
-.navbar .section {
+.containerNavbar .navbar .section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
 }
-.navbar .section .leftSection {
-  color: #FFFFFF;
+.containerNavbar .navbar .section .leftSection {
+  color: #EED369;
 }
-.navbar .section .rightSection .hamburger {
-  display: inline-block;
-  cursor: pointer;
-}
-.navbar .section .rightSection .hamburger .icon {
-  background-color: #FFFFFF;
-  width: 25px;
-  height: 2px;
-  transition: 0.4s;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.navbar .section .rightSection .hamburger .iconSwitch1 {
-  background-color: #2A2B36;
-  transform: rotate(-45deg) translate(1px, 6px);
-}
-.navbar .section .rightSection .hamburger .iconSwitch2 {
+.containerNavbar .navbar .section .middleSection {
   display: none;
 }
-.navbar .section .rightSection .hamburger .iconSwitch3 {
-  background-color: #2A2B36;
-  transform: rotate(45deg) translate(2px, -8px);
+.containerNavbar .navbar .section .rightSection {
+  display: none;
+}
+.containerNavbar .navbar .section .rightSection button {
+  cursor: pointer;
 }
 
+@media only screen and (min-width: 961px) {
+  .containerNavbar {
+    position: static;
+  }
+  .containerNavbar .navbar {
+    position: static;
+  }
+  .containerNavbar .navbar .section {
+    background-color: #2A2B36;
+    padding-bottom: 2rem;
+  }
+  .containerNavbar .navbar .section .leftSection {
+    min-width: 20rem;
+  }
+  .containerNavbar .navbar .section .middleSection {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    width: 32%;
+  }
+  .containerNavbar .navbar .section .middleSection ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    padding: 0px;
+    width: 100%;
+    font-weight: 100;
+  }
+  .containerNavbar .navbar .section .middleSection ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .containerNavbar .navbar .section .rightSection {
+    display: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    width: 11rem;
+  }
+  .containerNavbar .navbar .section .rightSection button {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 4px;
+    border-style: none;
+    color: #2A2B36;
+    outline-style: none;
+  }
+  .containerNavbar .navbar .section .rightSection a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .containerNavbar .navbar .hamburger {
+    display: none;
+  }
+}
 .sidebar {
   background-color: white;
   height: 100vh;
@@ -62,12 +123,21 @@
   right: 0px;
   transition: 0.4s;
   font-size: 1.6rem;
+  z-index: 4;
+  max-width: 350px;
+}
+.sidebar .showSidebar {
+  position: relative;
+  top: 1rem;
+  right: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: inherit;
 }
 .sidebar .container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 2rem;
   transition: 0.4s;
   width: 100%;
   height: 100%;
@@ -76,6 +146,25 @@
 .sidebar .container ul {
   line-height: 5rem;
   list-style: none;
+  width: 75%;
+}
+.sidebar .container ul li a {
+  text-decoration: none;
+  color: #2A2B36;
+}
+.sidebar .container ul li button {
+  width: 100%;
+  height: 3.3rem;
+  background-color: #2A2B36;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline-style: none;
+}
+.sidebar .container .login {
+  width: 100%;
+  height: 100vh;
 }
 
 .fadeIn {

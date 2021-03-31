@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  background-color: white;
+  color: #2A2B36;
+  margin: auto;
+  height: auto;
+  min-height: 85vh;
+}
+.container p {
+  font-size: 14px;
+}
+.container .body {
+  width: 86%;
+  margin: auto;
+  padding-top: 1rem;
+}
+.container .body .detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 6rem;
+}
+.container .body .detail p {
+  margin: 3px;
+}
+.container .body .detail .contact {
+  padding-top: 2rem;
+}
+.container .body .detail .socialMedia {
+  width: 56%;
+  padding: 3rem 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+}
+.container .body .detail .socialMedia img {
+  width: 3rem;
+  height: 3rem;
+}
+.container .body .googleMap {
+  height: 31vh;
+  width: 100%;
+}
+
+.marker {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 961px) {
+  .container .body {
+    width: 80%;
+  }
+  .container .body .detail {
+    margin: auto;
+  }
+  .container .body .detail p {
+    margin: 8px;
+    font-size: 18px;
+  }
+  .container .body .detail .socialMedia {
+    justify-content: space-evenly;
+    width: 35%;
+  }
+  .container .body .detail .socialMedia img {
+    cursor: pointer;
+  }
+  .container .body .googleMap {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=contact.module.css.map */

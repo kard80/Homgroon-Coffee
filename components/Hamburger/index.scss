@@ -1,0 +1,29 @@
+@import "../../styles/variables/_index.scss";
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+
+    .icon {
+        background-color: $fontColor;
+        width: 25px;
+        height: 2px;
+        transition: 0.4s;
+        margin: 6px 0;
+        transition: 0.4s
+    }
+
+    .iconSwitch1 {
+        background-color: $baseColor;
+        transform: rotate(-45deg) translate(1px, 6px);
+    }
+
+    .iconSwitch2 {
+        display: none;
+    }
+
+    .iconSwitch3 {
+        background-color: $baseColor;
+        transform: rotate(45deg) translate(2px, -8px);
+    }
+}

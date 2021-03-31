@@ -1,0 +1,31 @@
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+.hamburger .icon {
+  background-color: #FFFFFF;
+  width: 25px;
+  height: 2px;
+  transition: 0.4s;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.hamburger .iconSwitch1 {
+  background-color: #2A2B36;
+  transform: rotate(-45deg) translate(1px, 6px);
+}
+.hamburger .iconSwitch2 {
+  display: none;
+}
+.hamburger .iconSwitch3 {
+  background-color: #2A2B36;
+  transform: rotate(45deg) translate(2px, -8px);
+}
+
+@media screen and (min-width: 961px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.module.css.map */
